@@ -5,7 +5,14 @@ import (
 	"lecture01_homework/fizzbuzz"
 )
 
+const (
+	Begin   = 0
+	IterCnt = 100
+	Step    = 1
+)
+
 func main() {
-	// TODO тут напишите цикл с вызовом FizzBuzz
-	// fmt.Println(fizzbuzz.FizzBuzz(10))
+	for i := Begin; i < IterCnt; i += Step {
+		fmt.Println(fizzbuzz.FizzBuzz(i))
+	}
 }
